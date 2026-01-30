@@ -18,9 +18,533 @@
 </head>
 <body>
 
+<!-- Barra superior decorativa -->
+<div class="decoration-bar"></div>
+
+<!-- Estructura principal -->
 <div class="layout">
+
+    <!-- Cabecera -->
+    <header class="layout__header">
+        <div class="header__title">
+            <a href="header__link">
+                <img src="./assets/img/logo1.png" class="header__img" alt="Logo"/>
+            </a>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <section class="layout__nav">
+        <nav class="nav__navbar">
+            <ul class="navbar__list">
+
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                        Noticias
+                    </a>
+
+                    <div class="navbar__submenu">
+                        <!-- Lista deplegable-->
+                        <ul class="navbar__sublist">
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Videojuegos</a>
+                            </li>
+
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Novedades</a>
+                            </li>
+
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Otros</a>
+                                <ul class="sublist__dropdown">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Cine</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">Tecnología</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Carrusel imágenes -->
+                        <div class="submenu__carousel">
+                            <ul class="carousel__menu carousel__menu--small">
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-1.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Puntuación -->
+                                    <div class="carousel__container-rating">
+                                        <div class="container-rating__circle">
+                                            <div class="container-rating__border">
+                                                <span class="container-rating__mark">9</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              ¿Battlefield 2042 es el mejor de la saga?  
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-2.webp" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              ¿Elden Ring es el mejor juego del año?  
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-3.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              ¿The last of us 1 remake es mejor que el original?  
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-4.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Review de Dying Light 2
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                        Análisis
+                    </a>
+
+                    <div class="navbar__submenu">
+                        <div class="submenu__carousel">
+                            <ul class="carousel__menu">
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-5-1.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              Sifu es el juego de peleas mas dificil  
+                                            </a>
+                                        </h3>
+                                    </div>
+
+                                    <!-- Puntuación -->
+                                    <div class="carousel__container-rating">
+                                        <div class="container-rating__circle">
+                                            <div class="container-rating__border">
+                                                <span class="container-rating__mark">7.5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-6.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              trailer FC24  
+                                            </a>
+                                        </h3>
+                                    </div>
+
+                                    <!-- Puntuación -->
+                                    <div class="carousel__container-rating">
+                                        <div class="container-rating__circle">
+                                            <div class="container-rating__border">
+                                                <span class="container-rating__mark">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-7.png" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              ¿Multiversus es mejor que Super Smash Bros?
+                                            </a>
+                                        </h3>
+                                    </div>
+
+                                    <!-- Puntuación -->
+                                    <div class="carousel__container-rating">
+                                        <div class="container-rating__circle">
+                                            <div class="container-rating__border">
+                                                <span class="container-rating__mark">8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-8.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Review de Gran Turismo 7
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-9.webp" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Detalles alucinantes de Forza Horizon 5
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                        Juegos
+                    </a>
+
+                    <div class="navbar__submenu">
+                        <div class="submenu__carousel">
+                            <ul class="carousel__menu">
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-10.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              Review Rachet and Clank 
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-19.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Valorant es mejor que CSGO
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-11.png" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              ¿Farcry 6 es el mejor de la saga?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-12.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Gameplay de Resident Evil Village
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-13.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                It Takes Two fué el mejor juego del año
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                        Categorías
+                    </a>
+
+                    <div class="navbar__submenu navbar__submenu--small">
+                        <ul class="navbar__sublist">
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Acción</a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Sandbox</a>
+                                <ul class="sublist__dropdown">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            Aventuras
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            Conducción
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Lucha</a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#" class="sublist__link">Carreras</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                        Ranking
+                    </a>
+
+                    <div class="navbar__submenu">
+                        <div class="submenu__carousel">
+                            <ul class="carousel__menu">
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-14.jpeg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Trailer Biomutant
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-15.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Análisis Little Nightmare
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-16.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                              Gameplay WWE 2K24
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-17.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Red Dead Redemption 2 - El mejor juego de la historia
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+
+                                <!-- Elemento del carousel -->
+                                <li class="carousel__item">
+
+                                    <!-- Imagen -->
+                                    <div class="carousel__container-img">
+                                        <img src="./assets/img/game-18.jpg" class="carousel__img" alt="imagen submenu">
+                                    </div>
+
+                                    <!-- Título -->
+                                    <div class="carousel__detail">
+                                        <h3 class="carousel__title">
+                                            <a href="#" class="carousel__link">
+                                                Trailer Riders Republic
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="navbar__search">
+                <input class="search__input" type="text" name="search" placeholder="Buscar"/>
+                <div class="navbar__btn-search">
+                    <a href="#" class="navbar__button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </form>
+        </nav>
+    </section>
+
     
+
 </div>
+
+<!-- Pie de página -->
+<footer class="footer">
+
+</footer>
 
 </body>
 </html>

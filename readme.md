@@ -5,7 +5,7 @@ Maquetación frontend de una landing page temática de videojuegos.
 ---
 
 ## 🌐 Demo
-*(Próximamente)*
+https://danielsalinas123.github.io/landing-videojuegos-frontend/
 
 ---
 
@@ -35,6 +35,8 @@ El proyecto está orientado exclusivamente al **frontend**, sin lógica de backe
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
+
+---
 
 ### Metodologías y buenas prácticas
 - Metodología **BEM** para la organización de estilos
