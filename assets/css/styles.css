@@ -1,0 +1,344 @@
+/* Variables */
+:root{
+    --color-principal:#FFFFFF;
+    --color-secundario:#329153;
+    --color-bg-navbar:#333946;
+    --color-border-list:rgba(255,255,255,0.3);
+    --color-hover-sublist-item:rgba(0,0,0,0.05);
+    --color-shadow:rgba(0,0,0,0.1);
+}
+
+/* ESTILOS GENERALES */
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Montserrat",Helvetica,Arial, sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--color-principal);
+}
+
+/* Barra superior decorativa */
+.decoration-bar{
+    width: 100%;
+    min-height: 2.5rem;
+    background-color: var(--color-secundario);
+}
+
+/* ESTRUCTURA Y LAYOUT */
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "marquee marquee"
+    "slider slider"
+    "high high"
+    "videos videos"
+    "carousel carousel"
+    "main aside";
+    grid-template-columns: 70% 30%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* ESTILOS HEADER CABECERA*/
+.layout__header{
+    grid-area: header;
+    margin: 2rem 0;
+}
+
+.header__img{
+    width: 17rem;
+}
+
+/* ESTILOS NAVEGACIÓN NAV */
+.layout__nav{
+    grid-area: nav;
+    position: relative;
+}
+
+.nav__navbar{
+    position: relative;
+    height: 5rem;
+    background-color: var(--color-bg-navbar);
+    color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item{
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.navbar__item:hover{
+    background-color: var(--color-secundario);
+}
+
+.navbar__link{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    color: var(--color-principal);
+    text-transform: uppercase;
+}
+
+.navbar__search{
+    display: flex;
+    height: 100%;
+}
+
+.search__input{
+    display: none;
+    width: 20rem;
+    height: 100%;
+    font-size: 1.8rem;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    outline: none;
+    border: none;
+    transition: all 200ms ease-out;
+}
+
+.search__input::placeholder{
+    color: var(--color-principal); 
+    padding: 0.5rem;
+}
+
+.navbar__btn-search{
+    background-color: var(--color-secundario);
+    padding: 0.8rem 1.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__btn-search .fa-solid{
+    cursor: pointer;
+    color: var(--color-principal);
+    font-size: 2.7rem;
+}
+
+/* ESTILOS SUBMENUS */
+.navbar__item:hover .navbar__submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar__item:hover .submenu__carousel{
+    display: block;
+} 
+
+.navbar__submenu{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-secundario);
+    transition: all 300ms ease-in;
+
+    display: flex;
+}
+
+.navbar__submenu--small{
+    left: auto;
+    width: 20%;
+}
+
+.navbar__submenu--small > .navbar__sublist{
+    width: 100%;
+}
+
+.navbar__sublist{
+    padding: 1rem;
+    width: 26%;
+}
+
+.sublist__item{
+    padding: 0.1rem 0;
+    position: relative;
+    border-bottom: 1px solid var(--color-border-list);
+}
+
+.sublist__item:hover{
+    background-color: var(--color-hover-sublist-item);
+}
+
+.sublist__link{
+    color: var(--color-principal);
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sublist__dropdown{
+    position: absolute;
+    z-index: 9;
+    left: 100%;
+    top:0;
+    padding: 0 1rem;
+    width: 21rem;
+    background-color: var(--color-principal);
+    box-shadow: 2px 0 2px -1px var(--color-shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.sublist__item:hover .sublist__dropdown{
+    opacity: 1;
+    visibility: visible; 
+}
+
+.dropdown__item{
+    border-bottom: 1px solid var(--color-hover-sublist-item);
+}
+
+.dropdown__item:last-child{
+    border: none;
+}
+
+.dropdown__item:hover{
+    background-color: var(--color-hover-sublist-item);
+}
+
+.dropdown__link{
+    color: var(--color-bg-navbar);
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* ESTILOS CARRUSELES SUBMENUS */
+.submenu__carousel{
+    width: 100%;
+}
+
+.carousel__menu{
+    display: flex;
+}
+
+.carousel__item{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.carousel__menu--small > .carousel__item{
+    flex-basis: 25%;
+}
+
+.carousel__container-img{
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.carousel__img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__container-rating{
+    line-height: 1.5;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.container-rating__circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.2rem;
+    background-color: var(--color-secundario);
+    padding: 0.2rem;
+}
+
+.container-rating__border{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.2rem;
+    border: 2px solid var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-rating__mark{
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.carousel__detail{
+    line-height: 1.5;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carousel__link{
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px black;
+    background-color: var(--color-shadow);
+    transition: all 300ms ease;
+}
+
+.carousel__link:hover{
+    background-color: var(--color-secundario);
+}
+
+/* ESTILOS MARQUESINA MARQUEE */
+.layout__marquee{
+    grid-area: marquee;
+}
+
+/* ESTILOS SLIDER */
+.layout__slider{
+    grid-area: slider;
+}
+
+/* ESTILOS MEJORES MOMENTOS HIGHLIGHTS*/
+.layout__highlights{
+    grid-area: high;
+}
+
+/* ESTILOS VIDEOS */
+.layout__videos{
+    grid-area: videos;
+}
+
+/* ESTILOS CAROUSEL */
+.layout__carousel-games{
+    grid-area: carousel;
+}
+
+/* ESTILOS CONTENIDO PRINCIPA MAIN */
+.layout__main{
+    grid-area: main;
+}
+
+/* ESTILOS BARRA LATERAL ASIDE */
+.layout__aside{
+    grid-area: aside;
+}
