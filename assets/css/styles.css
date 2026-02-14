@@ -8,6 +8,7 @@
     --color-shadow:rgba(0,0,0,0.1);
     --color-bg-marquee:#EEE;
     --color-text-marquee:#7C7C7C;
+    --color-titles:#333;
 }
 
 /* ESTILOS GENERALES */
@@ -457,9 +458,168 @@ body{
     height: 4rem;
 }
 
+/* ESTILOS SUBENCABEZADOS */
+.news__subheader,
+.games__subheader,
+.login__subheader,
+.posts__subheader,
+.recent__subheader,
+.videos__subheader,
+.highlights__subheader,
+.last-reviews__subheader{
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-bg-navbar);
+    padding: 0.5rem;
+}
+
+.subheader__title,
+.news__title,
+.last-reviews__title,
+.list-header__title{
+    display: inline-block;
+    font-weight: 400;
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 0.5rem;
+    background-color: var(--color-secundario);
+}
+
 /* ESTILOS MEJORES MOMENTOS HIGHLIGHTS*/
 .layout__highlights{
     grid-area: high;
+    margin-bottom: 3rem;
+}
+
+.highlights__posts{
+   display: flex;
+   gap: 3rem;
+}
+
+.highlights__post{
+    flex-basis: 33%;
+    border-bottom: 1px solid var(--color-bg-marquee);
+}
+
+.highlights__image{
+    position: relative;
+    overflow: hidden;
+}
+
+.hightlights__img{
+    transition: all 300ms ease;
+}
+
+.hightlights__img:hover{
+    transform: scale(1.1);
+}
+
+.highlights__category{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-secundario);
+    transition: all 300ms linear;
+}
+
+.highlights__category:hover{
+    background-color: var(--color-bg-navbar);
+}
+
+.highlights__name-category{
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+.highlights__title{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlights__link{
+    color: var(--color-titles);
+    transition: all 300ms;
+}
+
+.highlights__title:hover > .highlights__link{
+    color: var(--color-secundario);
+}
+
+.hightlights__meta{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.highlights__author{
+    font-weight: 500;
+    color: var(--color-secundario);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.highlights__date{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: var(--color-text-marquee);
+}
+
+.highlights__description{
+    color: var(--color-titles);
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.highlights__footer-post{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-post__container{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-post__views,
+.footer-post__comments{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--color-text-marquee);
+}
+
+.footer-post__views > .fa-solid,
+.footer-post__comments > .fa-solid{
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.footer-post__comments > a{
+    display: inline;
+}
+
+.footer-post__read-more{
+    border: 1px solid var(--color-text-marquee);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    text-transform: capitalize;
+    color: var(--color-text-marquee);
+}
+
+.footer-post__read-more:hover{
+    border: 1px solid var(--color-secundario);
+    color: var(--color-secundario);
 }
 
 /* ESTILOS VIDEOS */
