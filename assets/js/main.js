@@ -1,0 +1,20 @@
+const input_search=document.querySelector(".search__input");
+const btn_search=document.querySelector(".navbar__button");
+
+btn_search.addEventListener("click",()=>
+{
+    const visible=document.querySelector(".visible");
+
+    if(visible)
+    {
+        input_search.style.width="0";
+        input_search.style.padding="0";
+        input_search.classList.remove("visible");
+    }
+    else
+    {
+        input_search.style.width="20rem";
+        input_search.style.padding="0.5rem 0 0.5rem 1rem";
+        input_search.classList.add("visible");
+    }
+});
