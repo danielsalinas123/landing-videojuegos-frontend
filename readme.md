@@ -1,4 +1,4 @@
-# Landing Page de Videojuegos
+# Landing Page de Videojuegos — v1.0
 
 Maquetación frontend de una landing page temática de videojuegos.
 
@@ -11,7 +11,8 @@ https://danielsalinas123.github.io/landing-videojuegos-frontend/
 
 ## 🧩 Descripción
 
-Este proyecto consiste en la **maquetación frontend de una landing page de videojuegos**, enfocada en una presentación visual atractiva, moderna y orientada a una experiencia inmersiva.
+Este proyecto consiste en la **maquetación frontend de una landing page de videojuegos**.  
+La presente versión corresponde a la **v1.0**, que incluye la implementación completa de la versión de escritorio.
 
 El objetivo principal es desarrollar una interfaz clara y bien estructurada, aplicando buenas prácticas de **HTML, CSS y JavaScript vanilla**, sin utilizar frameworks ni librerías externas.
 
@@ -48,7 +49,7 @@ El proyecto está orientado exclusivamente al **frontend**, sin lógica de backe
 ## 📁 Estructura del proyecto
 
 ```
-landing-videojuegos/
+landing-videojuegos-frontend/
 │
 ├── assets/
 │ ├── css/
@@ -80,9 +81,14 @@ El objetivo es garantizar una experiencia consistente y funcional en diferentes 
 
 ## 🚀 Estado del proyecto
 
-🟡 En desarrollo  
+🟢 Versión 1.0 completada (Desktop)
 
-Actualmente se encuentra en fase de maquetación frontend, con enfoque inicial en escritorio y planificación para adaptación responsive.
+La versión de escritorio se encuentra completamente implementada y funcional.
+
+Próximas iteraciones:
+- Adaptación responsive para tablet
+- Adaptación responsive para dispositivos móviles
+- Posibles mejoras de interacción y optimización
 
 ---
 
@@ -90,6 +96,12 @@ Actualmente se encuentra en fase de maquetación frontend, con enfoque inicial e
 
 Este repositorio forma parte de un proyecto de práctica y portafolio frontend.  
 La temática de videojuegos y los recursos visuales utilizados tienen fines exclusivamente educativos y demostrativos.
+
+---
+
+## 🏷 Versionado
+
+- **v1.0** — Maquetación completa versión escritorio
 
 ---
 
