@@ -1,4 +1,4 @@
-# Landing Page de Videojuegos — v1.0
+# Landing Page de Videojuegos — v2.0
 
 Maquetación frontend de una landing page temática de videojuegos.
 
@@ -12,7 +12,7 @@ https://danielsalinas123.github.io/landing-videojuegos-frontend/
 ## 🧩 Descripción
 
 Este proyecto consiste en la **maquetación frontend de una landing page de videojuegos**.  
-La presente versión corresponde a la **v1.0**, que incluye la implementación completa de la versión de escritorio.
+La presente versión corresponde a la **v2.0**, que incluye la implementación completa de la versión de escritorio y su adaptación responsive para tablets y dispositivos móviles.
 
 El objetivo principal es desarrollar una interfaz clara y bien estructurada, aplicando buenas prácticas de **HTML, CSS y JavaScript vanilla**, sin utilizar frameworks ni librerías externas.
 
@@ -26,7 +26,7 @@ El proyecto está orientado exclusivamente al **frontend**, sin lógica de backe
 - Practicar maquetación frontend con enfoque desktop-first
 - Implementar una estructura de código clara y mantenible
 - Aplicar la metodología **BEM** para estilos CSS
-- Preparar el sitio para una adaptación responsive
+- Implementar adaptación responsive para tablets y dispositivos móviles
 - Servir como proyecto de práctica y portafolio frontend
 
 ---
@@ -81,14 +81,15 @@ El objetivo es garantizar una experiencia consistente y funcional en diferentes 
 
 ## 🚀 Estado del proyecto
 
-🟢 Versión 1.0 completada (Desktop)
+🟢 Versión 2.0 completada
 
-La versión de escritorio se encuentra completamente implementada y funcional.
+El proyecto se encuentra completamente finalizado.
 
-Próximas iteraciones:
-- Adaptación responsive para tablet
+Incluye:
+- Versión de escritorio
+- Adaptación responsive para tablets
 - Adaptación responsive para dispositivos móviles
-- Posibles mejoras de interacción y optimización
+- Funcionalidad interactiva implementada con JavaScript
 
 ---
 
@@ -101,6 +102,7 @@ La temática de videojuegos y los recursos visuales utilizados tienen fines excl
 
 ## 🏷 Versionado
 
+- **v2.0** — Proyecto completo (Desktop + Responsive)
 - **v1.0** — Maquetación completa versión escritorio
 
 ---
