@@ -1,3 +1,7 @@
+body{
+    border: 1px solid red;
+}
+
 /* Menu movil */
 .navbar__mobile-btn{
     display: none;
@@ -18,10 +22,10 @@
     }
 }
 
-@media (max-width:1064px)
+@media (max-width:1024px)
 {
     .layout{
-        width: 80%;
+        max-width: 80%;
          grid-template-areas: 
         "header header"
         "nav nav"
@@ -180,12 +184,90 @@
 
     /* PIE DE PÁGINA FOOTER */
     .footer__container{
-        width: 80%;
+        max-width: 80%;
         flex-direction: column;
     }
 
     .footer__fslider{
         width: auto;
         height: auto;
+    }
+
+    .footer__text{
+        width: 80%;
+    }
+}
+
+@media (max-width:592px)
+{
+     /* SLIDER */
+    .layout__slider{
+        grid-template-areas: 
+        "slider1"
+        "slider2"
+        "slider3"
+        "slider4"
+        "slider5";
+        grid-template-columns: 100%;
+        column-gap: 0;
+    }
+
+    /* HIGHLIGHTS */
+    .highlights__post{
+        flex-basis: 100%;    
+    }
+
+    /* VIDEOS */
+    .main-video__yt-video{
+        height: 20rem;
+    }
+
+    .videos__video{
+        flex-basis: 100%;
+    }
+
+    /* CARRUSEL */
+    .carousel-games__item--hidden-small{
+        display: none;
+    }
+
+    /* NOTICIAS */
+    .news__main-post{
+        flex-direction: column;
+    }
+
+    .main-post__image{
+        width: 100%;
+    }
+
+    .news__list{
+        flex-direction: column;
+    }
+
+    /* JUEGOS */
+    .games__game{
+        flex-basis: 100%;
+    }
+
+    /* POSTS */
+    .posts__container{
+        flex-direction: column;
+    }
+
+    /* PIE DE PÁGINA FOOTER */
+    .footer__text{
+        width: 90%;
+        white-space: normal;
+    }
+}
+
+@media (max-width:395px)
+{
+    .layout{
+        max-width: 95%;
+    }
+
+    .footer__container{
+        max-width: 95%;
     }
 }
